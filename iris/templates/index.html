@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IRIS</title>
+</head>
+<body>
+    <form method="get" action="/predict">
+        {% csrf_token %}
+        <h1>IRIS</h1>
+        <p>꽃받침 길이:
+            <input type="text" name="sepal_length" value="5" />
+        </p>
+        <p>꽃받침 폭:
+            <input type="text" name="sepal_width" value="3" />
+        </p>
+        <p>꽃잎 길이:
+            <input type="text" name="petal_length" value="2" />
+        </p>
+        <p>꽃잎 폭:
+            <input type="text" name="petal_width" value="2.2" />
+        </p>
+
+        <input type="submit" value="predict" />
+
+    </form>
+
+</body>
+</html>
